@@ -7,5 +7,24 @@
     width : 1080px;
 }
 
-
 /* 앞에 div는 생략 가능 but div가 아닌 경우 생략 불가능*/
+
+#header-search > h1{
+    width : 280px;
+    display : inline-block;
+}
+
+/* 
+#header-center h1{
+    자손 선택자
+} 
+*/
+
+#header-search h2{
+    display : none;
+}
+
+#header-search fieldset{
+    width : 520px;
+    display : inline-block;
+}
