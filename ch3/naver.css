@@ -1,6 +1,11 @@
 /* Cascading Style Sheet */
 /* 부모 혹은 조상의 css 태그를 덮어씌워져 받는다. */
 /* 선택자(selector) */
+*{
+    box-sizing : border-box;
+    /* *은 모든 태그를 선택 */
+}
+
 .blind {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -19,6 +24,7 @@
 
 #header-search a {
     text-decoration : none;
+    vertical-align : middle;
 }
 
 #header-search  h1{
@@ -48,7 +54,7 @@
 }
 
 #header-search fieldset{
-    margin-left : 20;
+    margin-left : 20px;
     /* padding-left: 12px;
     padding-bottom : 12px;
     padding-left : 10px;
@@ -58,5 +64,13 @@
     width : 521px;
     height : 49px;
     display : inline-block;
-    border : 2px solid #03cf5d;
+    border : 2px solid #03cf5d; /*hex표기법*/
+    vertical-align : middle;
+}
+
+#header-search fieldset input{
+    border : none;
+    padding : 0;
+    outline : none;
+    
 }
