@@ -1,0 +1,30 @@
+/* Cascading Style Sheet */
+/* 부모 혹은 조상의 css 태그를 덮어씌워져 받는다. */
+/* 선택자(selector) */
+
+#header-center /*div#zerocho 여러개한번에*/{
+    margin : 0 auto; 
+    width : 1080px;
+}
+
+/* 앞에 div는 생략 가능 but div가 아닌 경우 생략 불가능*/
+
+#header-search > h1{
+    width : 280px;
+    display : inline-block;
+}
+
+/* 
+#header-center h1{
+    자손 선택자
+} 
+*/
+
+#header-search h2{
+    display : none;
+}
+
+#header-search fieldset{
+    width : 520px;
+    display : inline-block;
+}
