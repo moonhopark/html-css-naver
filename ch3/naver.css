@@ -1,6 +1,14 @@
 /* Cascading Style Sheet */
 /* 부모 혹은 조상의 css 태그를 덮어씌워져 받는다. */
 /* 선택자(selector) */
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
 
 #header-center /*div#zerocho 여러개한번에*/{
     margin : 0 auto; 
