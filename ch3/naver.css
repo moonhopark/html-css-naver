@@ -17,9 +17,24 @@
 
 /* 앞에 div는 생략 가능 but div가 아닌 경우 생략 불가능*/
 
-#header-search > h1{
-    width : 280px;
+#header-search a {
+    text-decoration : none;
+}
+
+#header-search  h1{
+    width : 198px;
+    height : 48px;
     display : inline-block;
+    background : url(./sp_search.png) -4px -4px no-repeat;
+    /* background-image : url(./sp_search.png);
+    background-position : -4px -10px;
+    background-repeat : no-repeat
+    text-indent : 100%;
+    overflow : hidden; */
+}
+
+#header-center h1 span{
+    display : none;
 }
 
 /* 
@@ -33,6 +48,15 @@
 }
 
 #header-search fieldset{
-    width : 520px;
+    margin-left : 20;
+    /* padding-left: 12px;
+    padding-bottom : 12px;
+    padding-left : 10px;
+    padding-right : 0; 
+    padding 은 위 오른쪽 아래 왼쪽 시계방향*/
+    padding : 12px 0 12px 10px;
+    width : 521px;
+    height : 49px;
     display : inline-block;
+    border : 2px solid #03cf5d;
 }
