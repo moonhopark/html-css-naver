@@ -1,0 +1,103 @@
+/* Cascading Style Sheet */
+/* 부모 혹은 조상의 css 태그를 덮어씌워져 받는다. */
+/* 선택자(selector) */
+*{
+    box-sizing : border-box;
+    /* *은 모든 태그를 선택 */
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+#header-center /*div#zerocho 여러개한번에*/{
+    margin : 0 auto; 
+    width : 1080px;
+}
+
+/* 앞에 div는 생략 가능 but div가 아닌 경우 생략 불가능*/
+
+#header-search a {
+    text-decoration : none;
+    vertical-align : middle;
+}
+
+#header-search  h1{
+    width : 198px;
+    height : 48px;
+    display : inline-block;
+    background : url(./sp_search.png) -4px -4px no-repeat;
+    /* background-image : url(./sp_search.png);
+    background-position : -4px -10px;
+    background-repeat : no-repeat
+    text-indent : 100%;
+    overflow : hidden; */
+    vertical-align: middle;
+    position: relative;
+    top: -6px;
+}
+
+#header-center h1 span{
+    display : none;
+}
+
+/* 
+#header-center h1{
+    자손 선택자
+} 
+*/
+
+#header-search h2{
+    display : none;
+}
+
+#header-search fieldset{
+    margin-left : 20px;
+    /* padding-left: 12px;
+    padding-bottom : 12px;
+    padding-left : 10px;
+    padding-right : 0; 
+    padding 은 위 오른쪽 아래 왼쪽 시계방향*/
+    padding : 12px 0 12px 10px;
+    width : 521px;
+    height : 49px;
+    display : inline-block;
+    border : 2px solid #03cf5d; /*hex표기법*/
+    vertical-align : middle;
+    position: relative;
+}
+
+#header-search fieldset input{
+    border : none;
+    padding : 0;
+    outline : none;
+    vertical-align: top;
+    width: 405px;
+    height: 23px;
+}
+
+#header-search fieldset button{
+    width: 49px;
+    height: 49px;
+    border: none;
+    padding: 0;
+    background: #03cf5d;
+    position: absolute;
+    right: -2px;
+    top: -2px;
+}
+
+#search-image {
+    background-image: url(./sp_search.png);
+    background-position: -3px -60px;
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    margin: 14px
+}
